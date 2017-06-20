@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Основа основ</title>
+    <link href="/static/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Scada" rel="stylesheet">
+</head>
+<body>
+<p>
+        <table class="headtable">
+            <tr>
+                <th><a href="{{ main_url }}">Главная</a></th>
+            </tr>
+        </table>
+</p>
+<p class="main_head">
+    Тут вы сможете увидеть графики употребления ключевых слов для сообществ, посвященных театру!
+    Просто выберите слово и наслаждайтесь столбчатой диаграммой, показыающей результаты за последнюю неделю, считая от секунды запроса.
+</p>
+<p>
+    Примечание: обновление графиков происходит в реальном времени,
+    в зависимости от скорости интеренета это может занять некоторое вмеря, но всегда это всего лишь секунды.
+</p>
+<p>
+    В случае, если возникают проблемы с непрорисовываемостью данных каких-то групп, просьба писать сюда: sashamattini@mail.ru
+</p>
+<p>
+    (Иногда группы доходят до того, что банят нас :))
+</p>
+
+<form>
+        <p>
+            <b>Какой график хотите посмотреть?</b><Br>
+            <input type="radio" name="variant" value="театр" checked> Театр<Br>
+            <input type="radio" name="variant" value="сцена"> Сцена<Br>
+            <input type="radio" name="variant" value="билет" checked> Билет<Br>
+            <input type="radio" name="variant" value="премьера" checked> Премьера<Br>
+            <input type="radio" name="variant" value="актер" checked> Актер/Актриса<Br>
+            <input type="radio" name="variant" value="зритель" checked> Зритель<Br>
+            <input type="radio" name="variant" value="спектакль" checked> Спектакль<Br>
+            <input type="radio" name="variant" value="театральный" checked> Театральный<Br>
+        </p>
+        <p>
+            <button class="myButton" type="submit" value = "Отправить">Построить</button>
+        </p>
+    </form>
+
+</body>
+</html>
